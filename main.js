@@ -50,8 +50,8 @@ function generateBooks({
   }){
     return `
     <li>
-    <span class="name">${bookname}</span><br>
-    <span class="name">${author}</span><br>
+    <span class="name">${bookname+"<br>"}</span
+    <span class="author">${author}</span><br>
     <button class="delete"> Remove </button>
    </li>
     `;
