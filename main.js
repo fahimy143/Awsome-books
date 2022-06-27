@@ -57,7 +57,9 @@ function generateBooks({
     `;
   }
   
-  
+  const mbookList=document.querySelector('.list-of-books');
+  mbookList.setAttribute('style','list-style-type:none');
+
   const bookContainer=document.querySelector('.book-container ul');
   
   const bookList=objectlist.map(book => generateBooks(book)).join('');
