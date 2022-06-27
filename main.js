@@ -1,13 +1,12 @@
 // add books
 
-objectlist = [];
+let objectlist = [];
 
-const addForm =document.forms['add-books'];
-const form =document.querySelector('form');
+const addForm = document.forms['add-books'];
+const form = document.querySelector('form');
 
-const mbookList=document.querySelector('.list-of-books');
-mbookList.setAttribute('style','list-style-type:none');
-
+const mbookList = document.querySelector('.list-of-books');
+mbookList.setAttribute('style', 'list-style-type:none');
 
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -31,7 +30,6 @@ addForm.addEventListener('submit', (e) => {
   author.classList.add('author');
   deleteBtn.classList.add('delete');
 
-
   li.appendChild(title);
   li.appendChild(author);
   li.appendChild(deleteBtn);
@@ -42,10 +40,9 @@ li.appendChild(author);
 li.appendChild(deleteBtn);
 bookContainer.appendChild(li);
 
-title.textContent =titleName;
-author.textContent =authorName;
-deleteBtn.textContent='delete';
-
+title.textContent = titleName;
+author.textContent = authorName;
+deleteBtn.textContent = 'delete';
 })
 
 // generate books
@@ -63,15 +60,14 @@ function generateBooks({
     `;
   }
 
-
-  const bookContainer=document.querySelector('.book-container ul');
+  const bookContainer = document.querySelector('.book-container ul');
   
-  const bookList=objectlist.map(book => generateBooks(book)).join('');
+  const bookList = objectlist.map(book => generateBooks(book)).join('');
   
-  bookContainer.innerHTML+=bookList;
+  bookContainer.innerHTML += bookList;
   
   
-  const lists =document.querySelector ('#book-list ul');
+  const lists = document.querySelector ('#book-list ul');
   
   
   let booksFromLocalStorage = JSON.parse(localStorage.getItem('books'));
@@ -84,9 +80,7 @@ function generateBooks({
     bookContainer.innerHTML = books.map((book) => generateBooks(book)).join('');
   }
 
-
 //   delete books
-
 
 bookContainer.addEventListener ('click' ,function (e) {
     const title = e.target.parentElement.firstElementChild.textContent;
