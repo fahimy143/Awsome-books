@@ -55,14 +55,10 @@ function generateBooks({
   }){
     return `
     <li>
-<<<<<<< HEAD
     <div class="name">${bookname}</div>
     <div class="name">${author}</div>
-=======
-    <span class="name">${bookname+"<br>"}</span
-    <span class="author">${author}</span><br>
->>>>>>> 9633ca89756a3361e44256701d78f78a5842f28d
     <button class="delete"> Remove </button>
+    <hr>
    </li>
     `;
   }
