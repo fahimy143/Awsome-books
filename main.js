@@ -1,6 +1,40 @@
-// add books
+/* eslint-disable */
+// generate books
 
 let objectlist = [];
+
+function generateBooks({
+  bookname, author,
+}) {
+  return `
+  <li>
+  <div class="name">${bookname}</div>
+  <div class="name">${author}</div>
+  <button class="delete"> Remove </button>
+  <hr>
+ </li>
+  `;
+}
+
+const bookContainer = document.querySelector('.book-container ul');
+
+const bookList = objectlist.map(book => generateBooks(book)).join('');
+
+bookContainer.innerHTML += bookList;
+
+const lists = document.querySelector('#book-list ul');
+
+const booksFromLocalStorage = JSON.parse(localStorage.getItem('books'));
+if (booksFromLocalStorage) {
+  bookContainer.innerHTML = booksFromLocalStorage
+    .map((book) => generateBooks(book))
+    .join('');
+}
+else {
+  bookContainer.innerHTML = books.map((book) => generateBooks(book)).join('');
+}
+
+// add books
 
 const addForm = document.forms['add-books'];
 const form = document.querySelector('form');
@@ -15,10 +49,10 @@ addForm.addEventListener('submit', (e) => {
   const authorName = addForm.querySelector('.author').value;
 
   objectlist.push({
-    bookname:titleName , author:authorName
-  })
+    bookname: titleName, author: authorName,
+  });
   
-  localStorage.setItem('books',JSON.stringify(objectlist))
+  localStorage.setItem('books', JSON.stringify(objectlist));
   form.reset();
 
   const li = document.createElement('li');
@@ -45,52 +79,17 @@ author.textContent = authorName;
 deleteBtn.textContent = 'delete';
 })
 
-// generate books
-
-function generateBooks({
-    bookname, author
-  }){
-    return `
-    <li>
-    <div class="name">${bookname}</div>
-    <div class="name">${author}</div>
-    <button class="delete"> Remove </button>
-    <hr>
-   </li>
-    `;
-  }
-
-  const bookContainer = document.querySelector('.book-container ul');
-  
-  const bookList = objectlist.map(book => generateBooks(book)).join('');
-  
-  bookContainer.innerHTML += bookList;
-  
-  
-  const lists = document.querySelector ('#book-list ul');
-  
-  
-  let booksFromLocalStorage = JSON.parse(localStorage.getItem('books'));
-  if (booksFromLocalStorage) {
-    bookContainer.innerHTML = booksFromLocalStorage
-      .map((book) => generateBooks(book))
-      .join('');
-  } 
-  else {
-    bookContainer.innerHTML = books.map((book) => generateBooks(book)).join('');
-  }
 
 //   delete books
 
-bookContainer.addEventListener ('click' ,function (e) {
-    const title = e.target.parentElement.firstElementChild.textContent;
-    if (e.target.className =='delete') {
-      const li = e.target.parentElement;
-      bookContainer.removeChild(li);
-      objectlist = objectlist.filter((obj) => obj.bookname !== title);
-      console.log(objectlist);
-      console.log(title);
-      localStorage.setItem('books',JSON.stringify(objectlist))
-    }
-  });
-  
+bookContainer.addEventListener ('click', function(e) {
+  const title = e.target.parentElement.firstElementChild.textContent;
+  if (e.target.className === 'delete') {
+    const li = e.target.parentElement;
+    bookContainer.removeChild(li);
+    objectlist = objectlist.filter((obj) => obj.bookname !== title);
+    console.log(objectlist);
+    console.log(title);
+    localStorage.setItem('books', JSON.stringify(objectlist));
+  }
+});
