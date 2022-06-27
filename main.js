@@ -5,6 +5,10 @@ objectlist = [];
 const addForm =document.forms['add-books'];
 const form =document.querySelector('form');
 
+const mbookList=document.querySelector('.list-of-books');
+mbookList.setAttribute('style','list-style-type:none');
+
+
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -19,8 +23,8 @@ addForm.addEventListener('submit', (e) => {
   form.reset();
 
   const li = document.createElement('li');
-  const title = document.createElement('span');
-  const author = document.createElement('span');
+  const title = document.createElement('div');
+  const author = document.createElement('div');
   const deleteBtn = document.createElement('button');
 
   title.classList.add('name');
@@ -41,6 +45,7 @@ bookContainer.appendChild(li);
 title.textContent =titleName;
 author.textContent =authorName;
 deleteBtn.textContent='delete';
+
 })
 
 // generate books
@@ -50,8 +55,8 @@ function generateBooks({
   }){
     return `
     <li>
-    <span class="name">${bookname}</span><br>
-    <span class="name">${author}</span><br>
+    <div class="name">${bookname}</div>
+    <div class="name">${author}</div>
     <button class="delete"> Remove </button>
    </li>
     `;
