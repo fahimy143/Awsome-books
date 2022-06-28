@@ -6,27 +6,18 @@ const form = document.querySelector('form');
 class Books {
   constructor() {
     this.by = null;
-    this.books = [
-      {
-        title: 'Book-1',
-        author: 'john',
-      },
-      {
-        title: 'Book-2',
-        author: 'jack',
-      },
-    ];
+    this.books = [];
   }
 
   generateBook(book) {
     this.by = 'by';
     return `<div>
         <ul>
-          <li>"${book.title}"</li>
+          <li>"${book.title} "</li>
           <li>${this.by}</li>
           <li>${book.author}</li> 
         </ul>
-      <button>Delete</button>
+      <button>Remove</button>
       </div>
       `;
   }
