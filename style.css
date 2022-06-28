@@ -1,13 +1,82 @@
 * {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 body {
-  align-items: center;
-  text-align: center;
-  line-height: 20px;
+  line-height: 25px;
 }
 
-ul li {
-  margin: 20px;
+section {
+  list-style-type: circle;
+  margin: auto 18%;
+}
+
+#book-list h1 {
+  align-items: center;
+  text-align: center;
+}
+
+section ul {
+  list-style: circle;
+}
+
+.book-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.book-container button {
+  padding: 4px;
+  box-shadow: 4px 3px;
+}
+
+.form {
+  flex-direction: row;
+  text-align: center;
+}
+
+.book-container {
+  border: 2px solid grey;
+  margin: 12px auto;
+  width: 50%;
+}
+
+input {
+  border: 2px solid;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 9px;
+}
+
+.book-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  height: 30px;
+}
+
+.book-container div:nth-child(odd) {
+  background: lightgrey;
+}
+
+.addbtn {
+  margin-top: 1%;
+  box-shadow: 5px 2px;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+.form-heading {
+  padding: 20px;
+}
+
+.line {
+  margin-left: 500px;
+  margin-right: 500px;
 }
