@@ -13,11 +13,11 @@ class Books {
     this.by = 'by';
     return `<div>
         <ul>
-          <li>"${book.title} "</li>
+          <li>"${book.title}"</li>
           <li>${this.by}</li>
           <li>${book.author}</li> 
         </ul>
-      <button>Delete</button>
+      <button>Remove</button>
       </div>
       `;
   }
