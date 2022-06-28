@@ -17,7 +17,7 @@ class Books {
           <li>${this.by}</li>
           <li>${book.author}</li> 
         </ul>
-      <button>Remove</button>
+      <button>Delete</button>
       </div>
       `;
   }
