@@ -2,7 +2,7 @@
 
 # Awesome books
 
->this project is for second module
+>This is a website that allows users to add/remove books from a list. This project is build using JavaScript objects and arrays
 
 
 ## Built With
