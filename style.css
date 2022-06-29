@@ -172,3 +172,8 @@ input {
   width: 100%;
   bottom: 0;
 }
+
+#date {
+  float: right;
+  margin-right: 15px;
+}

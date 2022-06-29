@@ -93,3 +93,8 @@ form.addEventListener('submit', (e) => {
 booksContainer.addEventListener('click', (e) => {
   book.removeBook(e);
 });
+
+// date
+
+const date = new Date();
+document.getElementById('date').innerHTML = date;
