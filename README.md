@@ -2,7 +2,7 @@
 
 # Awesome books
 
->This is a website that allows users to add/remove books from a list. This project is build using JavaScript objects and arrays
+>This is a website that allows users to add and remove books from a list. This project is build using JavaScript objects
 
 
 ## Built With
@@ -35,16 +35,15 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Fahimy**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/fahimy143)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustafa-fahimy-307566236/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/fahimy143/My_Portfolio/issues/).
+Feel free to check the [issues page](https://github.com/fahimy143/Awsome-books/issues).
 
 ## Show your support
 
