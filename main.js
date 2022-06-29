@@ -1,5 +1,29 @@
 const booksContainer = document.querySelector('.book-container');
 const form = document.querySelector('form');
+const list = document.querySelector('#book-list');
+const addNew = document.querySelector('#add-books');
+const contact = document.querySelector('#contact');
+const bookList = document.querySelector('#listbook');
+const addBook = document.querySelector('#addbook');
+const contacts = document.querySelector('#contacts');
+
+bookList.addEventListener('click', (e) => {
+  e.preventDefault();
+  list.style.display = 'flex';
+  addNew.style.display = 'none';
+  contact.style.display = 'none';
+});
+
+addBook.addEventListener('click', () => {
+  list.style.display = 'none';
+  addNew.style.display = 'flex';
+  contact.style.display = 'none';
+});
+contacts.addEventListener('click', () => {
+  list.style.display = 'none';
+  addNew.style.display = 'none';
+  contact.style.display = 'flex';
+});
 
 // Create book class, and methods
 
@@ -13,7 +37,7 @@ class Books {
     this.by = 'by';
     return `<div>
         <ul>
-          <li>"${book.title}"</li>
+          <li>"${book.title}" </li>
           <li>${this.by}</li>
           <li>${book.author}</li> 
         </ul>
