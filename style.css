@@ -60,14 +60,6 @@ header {
   justify-content: space-between;
 }
 
-/* Show Date */
-.date {
-  text-align: right;
-  padding: 10px;
-  align-items: right;
-  margin: 0 20px;
-}
-
 .page-banner-header {
   display: flex;
   flex-direction: column;

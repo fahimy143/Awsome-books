@@ -7,9 +7,6 @@ const bookList = document.querySelector('#listbook');
 const addBook = document.querySelector('#addbook');
 const contacts = document.querySelector('#contacts');
 
-var today = new Date();
-document.getElementById("showDate").innerHTML=today; 
-
 bookList.addEventListener('click', (e) => {
   e.preventDefault();
   list.style.display = 'flex';
