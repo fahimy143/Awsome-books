@@ -12,7 +12,7 @@
 - JavaScript
 - Linters
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://fahimy143.github.io/Awsome-books/)
 
