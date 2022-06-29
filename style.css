@@ -1,0 +1,184 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  line-height: 25px;
+}
+
+.title {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* nav */
+
+header {
+  margin-bottom: 55px;
+}
+
+.page-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid grey;
+  padding: 10px;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.right {
+  display: flex;
+  margin-right: 10px;
+}
+
+.right li {
+  margin-left: 12px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.right li a {
+  color: black;
+}
+
+.right li a:hover {
+  color: blue;
+}
+
+.b {
+  border-right: 2px solid grey;
+  padding-right: 5px;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-banner-header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* books */
+
+section {
+  list-style-type: circle;
+  margin: auto 18%;
+}
+
+section h1 {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+#book-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#book-list h1 {
+  text-align: center;
+}
+
+section ul {
+  list-style: circle;
+}
+
+.book-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.book-container button {
+  padding: 4px;
+  box-shadow: 4px 3px;
+}
+
+.book-container {
+  border: 2px solid grey;
+  margin: 12px auto;
+  width: 80%;
+}
+
+.book-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  height: 30px;
+}
+
+.book-container div:nth-child(odd) {
+  background: lightgrey;
+}
+
+/* form */
+
+.form {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+
+input {
+  border: 2px solid;
+  padding: 4px;
+  border-radius: 2px;
+  margin-bottom: 9px;
+}
+
+.addbtn {
+  margin-top: 1%;
+  box-shadow: 5px 2px;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+.form-heading {
+  padding: 20px;
+}
+
+/* contact info */
+
+.contact-info {
+  font-size: large;
+  font-weight: 500;
+  flex-direction: column;
+  display: none;
+  align-items: center;
+}
+
+.contact-info ul {
+  padding-top: 20px;
+}
+
+.contact-info ul li {
+  list-style-type: disc;
+}
+
+/* footer */
+
+.footer {
+  position: fixed;
+  border: 1.9px solid grey;
+  padding: 9px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+#date {
+  float: right;
+  margin-right: 15px;
+}
