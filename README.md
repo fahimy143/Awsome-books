@@ -31,12 +31,12 @@ To get a local copy up and running follow these simple example steps.
   - Clone the github repository and set up linters
 
 
-## Authors
+## Author
 
 👤 **Fahimy**
 
-- GitHub: [@githubhandle](https://github.com/fahimy143)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustafa-fahimy-307566236/)
+- GitHub: [@fahimy143](https://github.com/fahimy143)
+- LinkedIn: [Mustafa Fahimy](https://www.linkedin.com/in/mustafa-fahimy-307566236/)
 
 
 ## 🤝 Contributing
